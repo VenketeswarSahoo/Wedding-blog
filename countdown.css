@@ -1,0 +1,56 @@
+/* COUNTDOWN CSS SECTION */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Ysabeau+SC&display=swap');
+:root {
+    --smaller: .75;
+  }
+
+  .countdown {
+    align-items: center;
+    background-color: #ffd54f;
+    display: flex;
+    margin-top: 3px;
+    font-family: 'Ysabeau SC', sans-serif;
+  }
+  
+  .container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .countdown h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    /* text-transform: uppercase; */
+  }
+  
+  .countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    /* padding: 1em; */
+    padding: 0 7px;
+    text-transform: uppercase;
+  }
+  
+  .countdown li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    .countdown h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    .countdown li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    .countdown li span {
+      font-size: calc(3.375rem * var(--smaller));
+      margin-top: -20px;
+    }
+  }
